@@ -1,0 +1,105 @@
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    .banner{
+        position: relative;
+        width: 100%;
+        height:55px;
+        background: darkslategray;
+        background-size: cover;
+    }
+
+    header{
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        padding:0 50px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo{
+        color:aliceblue;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    ul{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+    }
+
+    ul li{
+        list-style: none;
+        line-height: 50px;
+    }
+
+    ul li a{
+        color: aliceblue;
+        text-decoration: none;
+        padding:0 20px;
+        font-size: 22px;
+    }
+
+    ul li.colors,ul li:hover{
+        background-color:darkslategray;
+    }
+    
+    body{
+        background-color: dimgray;
+    }
+    
+    div{
+        display:inline-block;
+        width:30%;
+        padding:0 20px;
+        box-sizing: border-box;
+    }
+
+    img{
+        width:100%;
+        border-radius:20px 0 20px 0;
+    }
+    
+    .mobile{
+        display: none;
+    }
+
+        @media(max-width:500px){
+
+            div{
+                width: 100%;
+            }
+
+            div:hover{
+                transform:none;
+            }
+
+            body div:first-child a{
+                display: block;
+                text-aling:center;
+            }
+
+            .desktop{
+                display: none;
+            }
+
+            .mobile{
+                display: block;
+            }
+        }
+    
+
+    h1{
+        text-align: center;
+    }
